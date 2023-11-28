@@ -1,73 +1,159 @@
-
-<!Doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>StarLoom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starloom - Gaming Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1d1a1f; 
+            color: #ffffff; 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #1f1f20; 
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            max-width: 100%;
+            max-height: 80px; 
+            height: auto;
+        }
+
+        nav {
+            background-color: #1d1a1f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .featured-games {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .latest-news {
+            background-color: #29252a; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1d1a1f; 
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .menu-btn {
+            display: block;
+            cursor: pointer;
+            font-size: 22px;
+            color: #fff;
+            border: none;
+            background: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .options {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            background-color: #1a191a; 
+            padding: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .options a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .options a:hover {
+            background-color: #673ab7; 
+        }
+    </style>
 </head>
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="toggleOptions()">☰</button>
+        <img src="starloom-logo.png" alt="Starloom Logo" style = "width: 150px; height: 300px;">
+        <div class="options" id="optionsMenu">
+            <a href="#">Reviews</a>
+            <a href="#">News</a>
+            <a href="#">Guides</a>
+            <a href="#">Videos</a>
+            <a href="#">Forum</a>
+
+
+        </div>
+    </header>
+
+    <nav>
+        <input type="text" placeholder="Search...">
+    </nav>
+
+    <div class="featured-games">
+        <h2>Featured Games</h2>
+        <img src="mw3.jpg" alt="modern warfare game" style = "width: 300px; height: 168px;">
+        <img src="fc24.png" alt="FiFa game" style = "width: 300px; height: 168px;">
+        <img src="minecraft-2.avif" alt="minecraft game" style = "width: 300px; height: 168px;">
 
 
 
-<div>
 
-    <img src="starloom-logo.png" alt="logo" style="width:232.75px;height:150px;" >
-    <h2>1.Company Overview</h2>
-    <h4>Technova is a startup tech company that originated in 2011.
-        Our main objective is to innovate and change the way we interact with technology. 
-        We began as a small firm who wants to offer well priced services and provide
-        excellent customer service. We have an amazing track record when answering 
-        customer queries and issues. 
-        This website has been made
-        in order to help new tech users understand the basics of coding
-        and understanding how to properly read and write code 
-        so they can be the best programmers. 
-    </h4>
+    </div>
+
+    <div class="latest-news">
+        <h2>Latest News</h2>
+        <img src="top-new-of-the-day-thumbnail-1170123120130.jpeg" alt="news article" style = "width: 300px; height: 168px;">
+        <img src="gaming-news-1.jpg" alt="news article 2" style = "width: 300px; height: 168px;">
 
 
-    <h2>2. Our Services</h2>
-    <h4>
-        <li>Repairs</li>
-        <li>Coding</li>
-        <li>troubleshooting</li>
-        <li>Fixing computers</li>
-        <li>Newest devices</li>
-        <li>Competitive prices to new devices</li>
-    </h4>
+    </div>
 
-    <h2>3. Contact details</h2>
-    <p>email: info@technova.com</p>
-    <a>contact number: +123-456-7890</a>
-    <p>Address: UX Lab
-        Street, Lewisham Way, London</p>
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
 
-          
-    <h2>4. Quarterly Sales: </h2>
-      
+    </footer>
 
-<TABLE BORDER=”2″>
-    <TR>
-    <TD>Quarter</TD>
-    <TD>Sales</TD>
-    </TR>
-    <TR>
-    <TD>Q1</TD>
-    <TD>20,000</TD>
-    </TR>
-    <TR> 
-    <TD>Q2</TD>
-    <TD>25,000</TD>
-    </TR>
-    <TR> 
-    <TD>Q3</TD>
-    <TD>30,000</TD>
-    </TR>
-    <TR> 
-    <TD>Q4</TD>
-    <TD>32,000</TD>
-    </TR>
-    </TABLE>
-    
-
-    <h3> Partner Website: <a href="https://www.partnerwebsite.com" target="blank">Visit our Partner</a> </h3>
-
-<h3> Awards: </h3>    <p> This award was given to us for being the best start up of 2023. We proudly take this award and aim to continue working hard to provide the best services.</p>
+    <script>
+        function toggleOptions() {
+            var options = document.getElementById('optionsMenu');
+            options.style.display = (options.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
