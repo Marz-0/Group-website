@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guides</title>
+        <!-- created for the background of the website -->
+        <style>    
+          body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1d1a1f; 
+            color: #ffffff; 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        header {
+            background-color: #1d1a1f; 
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .Guides {
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        </style>
+    </head>
+
+    <style>
+        .options a {
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+    </style>
+    <header>
+        <div class="options" id="optionsMenu">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="review.html">Review</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="guides.html">Guides</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="videos.html">Videos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="forum.html">Forum</a>
+
+
+        </div>
+    </header>
+    <body>
+      
+        <!-- this is for the guides page and gives a selection of games to choose from -->
+        <div class="Guides">
+            <h1 style="border-width:3px; border-style:solid; border-color:#000000; padding: 1em;border-radius: 5px;">Guides</h1>
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;">Welcome to the guides page this page is designed to help gamers understand the game that they are playing and truly learn more about it, through such things as how the game was designed, how to properly play in order to get the best experience out of it and furthermore to give feedback about what they enjoy and what can be worked on.</h1>
+            <h2 style="font-size: x-large;">Select the game you would like to get a guide on.</h2>
+           <br>
+              <label for="Games" style="font-size: 25px;">Choose a game:</label> 
+              <select id="Games" name="Games" onchange="redirectToSelectedGame()" style="font-size: large;">
+                <option value="Call of Duty">Call of Duty</option>
+                <option value="Fifa">Fifa</option>
+                <option value="Valorant" selected>Valorant</option>
+                <option value="Grand Theft Auto">Grand Theft Auto</option>
+                <option value="Super Mario">Super Mario</option>
+              <input type="submit" style="font-size: large;">
+            </select>
+           
+
+ <!-- javascript has been implemented to make the options clickable -->
+<script>
+    function redirectToSelectedGame() {
+        var selectedGame = document.getElementById("Games").value;
+        var link = '';
+
+        //These are the links for each game
+        switch (selectedGame) {
+            case "Call of Duty":
+                link = 'https://www.callofduty.com/uk/en/';
+                break;
+
+            case "Fifa":
+                link = 'https://www.ea.com/fifa';
+                break;
+
+                case "Valorant":
+                link = 'https://playvalorant.com/';
+                break;
+
+                case "Grand Theft Auto":
+                    link = 'https://www.rockstargames.com/games/info/gta5';
+                    break;
+
+                    case "Super Mario":
+                        link = 'https://www.nintendo.com/games/detail/super-mario-odyssey-switch/';
+                        break;
+            
+
+            default:
+                // This is the default link for the webpage you get sent to
+        }
+        
+
+        // Takes you to the game link
+        if (link) {
+            window.location.href = link;
+        }
+    }
+</script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <div class="Pictures">
+        <h1 style="border-width:3px; border-style:solid; border-color:#000000; padding: 1em;border-radius: 5px;">Other popular games</h1>
+        <div class="Pictures">
+            <a href="https://www.ubisoft.com/en-us/game/assassins-creed/publishing/news-updates/6rMa8MWjxlyhJZhZRDKJvx/assassins-creed-the-essential-guide" target="_blank">
+                <img src="assassins creeed.png" alt="Assassins Creed" width="400" height="268" style="width: 400px; height: 268px; margin-right: 20px;">  
+                
+            </a>
+            <a href="https://gamefaqs.gamespot.com/genesis/454495-sonic-the-hedgehog/faqs" target="_blank">
+                <img src="sonic.jpeg" alt="Sonic" width="400" height="268" style="width: 400px; height: 268px; margin-right: 20px;">
+            </a>
+            <a href="https://www.ign.com/wikis/fortnite/" target="_blank">
+                <img src="fornite.jpeg" alt="Game 2" style="width: 400px; height: 268px; margin-right: 20px;">
+            </a>
+            <a href="https://www.gamersrdy.com/blog/category/rocket-league/written-guides/" target="_blank">
+                <img src="rocket league.jpeg" alt="Game 3" style="width: 400px; height: 268px; margin-right: 20px;"> 
+            </a>
+            <a href="https://www.ign.com/wikis/the-witcher-3-wild-hunt/" target="_blank">
+                <img src="witcher 3.png" alt="Game 4" style="width: 400px; height: 268px;">
+            </a>
+        </div>
+        </body>
+</html>

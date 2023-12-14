@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starloom - Gaming Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1d1a1f; 
+            color: #ffffff; 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #1f1f20; 
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            max-width: 100%;
+            max-height: 80px; 
+            height: auto;
+        }
+
+        nav {
+            background-color: #1d1a1f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .featured-games {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .latest-news {
+            background-color: #29252a; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1d1a1f; 
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .menu-btn {
+            display: block;
+            cursor: pointer;
+            font-size: 22px;
+            color: #fff;
+            border: none;
+            background: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .options {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            background-color: #1a191a; 
+            padding: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .options a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .options a:hover {
+            background-color: #673ab7; 
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #000000;
+            border-bottom: 1px solid #000000;
+        }
+
+        .navbar-left, .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: 1a191a;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(250, 250, 250);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: #673ab7; 
+
+        }
+
+        button, select {
+            margin: 0;
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .review {
+            border-bottom: 1px solid #000000;
+            padding: 20px;
+            display: flex;
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="toggleOptions()">☰</button>
+        </a><img src="starloom-logo.png" alt="Starloom Logo" style = "width: 150px; height: 300px;">
+        <div class="options" id="optionsMenu">
+            <a href="index.html">Home</a>
+            <a href="review.html">Review</a>
+            <a href="guides.html">Guides</a>
+            <a href="videos.html">Videos</a>
+            <a href="forum.html">Forum</a>
+
+
+        </div>
+    </header>
+
+    
+
+   
+        <body>
+            <header class="navbar">
+                <div class="navbar-left">
+                    <button>All</button>
+                    <button>Action</button>
+                    <button>RPG</button>
+                    <button>Platform</button>
+                    <button>Open World</button>
+
+                </div>
+        
+                <div class="navbar-right">
+                    <div class="dropdown">
+                        <button>Review Scores</button>
+                        <div class="dropdown-content">
+                            <a href="#">All Scores</a>
+                            <a href="#">Above 8</a>
+                            <a href="#">Below 8</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button>Sort by Latest</button>
+                        <div class="dropdown-content">
+                            <a href="#">Latest</a>
+                            <a href="#">Oldest</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button>All Genres</button>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Adventure</a>
+                            <a href="#">RPG</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        
+            <main>
+                <div class="header">
+                    <h1>All Reviews</h1>
+                </div>
+        
+                <div class="review">
+                    <img src="asgardswrath.jpg" width="430" height="250" alt="Review Image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <div class="review-content">
+                        <h2>Asgard's Wrath 2 Review</h2>
+                        <p>This open-world action RPG sets a new gold standard for VR...</p>
+                        <span>1h ago - by Trevor</span>
+                        <br>
+                    </div>
+                </div>
+
+
+
+                <div class="review">
+                    <img src="ACMirage.jpg" width="430" height="250" alt="Review Image"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="review-content">
+                        <h2>Assassins Creed Mirage Review</h2>
+                        <p>This open-world action RPG sets a new gold standard for VR...</p>
+                        <span>3h ago - by Ed Mcdonald</span>
+                    </div>
+                </div>
+
+                
+
+                <div class="review">
+                    <img src="ColdwarZombie.jpg" width="430" height="250" alt="Review Image"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="review-content">
+                        <h2>Cold War Zombies Review</h2>
+                        <p>The all loved Zombies mode we all love in the Black Ops series is back with Cold war.</p>
+                        <span>13h ago - by Skimp</span>
+                    </div>
+                </div>
+
+                <script>
+                    function toggleOptions() {
+                        var options = document.getElementById('optionsMenu');
+                        options.style.display = (options.style.display === 'block') ? 'none' : 'block';
+                    }
+                </script>
+
+    </script>
+</body>
+</html>
