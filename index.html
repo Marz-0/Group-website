@@ -12,6 +12,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            margin-left: 100px;
+            margin-right: 100px;
         }
 
         header {
@@ -23,7 +25,7 @@
 
         header img {
             max-width: 100%;
-            max-height: 80px; 
+            max-height: 150px; 
             height: auto;
         }
 
@@ -101,50 +103,56 @@
         .options a:hover {
             background-color: #673ab7; 
         }
+
+ 
     </style>
 </head>
 <body>
 
     <header>
         <button class="menu-btn" onclick="toggleOptions()">☰</button>
-        <img src="starloom-logo.png" alt="Starloom Logo" style = "width: 150px; height: 300px;">
+        <img src="starloom-logo.png" alt="Starloom Logo" style = "width: 300px; height: 300px;">
         <div class="options" id="optionsMenu">
             <a href="#">Reviews</a>
-            <a href="#">News</a>
             <a href="guides.html">Guides</a>
-            <a href="#">Videos</a>
+            <a href="videos.html">Videos</a>
             <a href="forum.html">Forum</a>
 
 
         </div>
     </header>
 
-    <nav>
-        <input type="text" placeholder="Search...">
-    </nav>
+    <header>
+        <div class="options" id="optionsMenu">
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="guides.html">Guides</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="videos.html">Videos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="forum.html">Forum</a>
+
+
+        </div>
+    </header>
 
     <div class="featured-games">
-        <h2>Featured Games</h2>
+        <h2 style="border-width:3px; border-style:solid; border-color:#000000; padding: 1em;border-radius: 5px;">Featured Games</h2>
         <img src="mw3.jpg" alt="modern warfare game" style = "width: 300px; height: 168px;">
         <img src="fc24.png" alt="FiFa game" style = "width: 300px; height: 168px;">
         <img src="minecraft-2.avif" alt="minecraft game" style = "width: 300px; height: 168px;">
-
-
-
-
     </div>
 
     <div class="latest-news">
-        <h2>Latest News</h2>
+        <h2 style="border-width:3px; border-style:solid; border-color:#000000; padding: 1em; border-radius: 5px;;">Latest News</h2>
         <img src="top-new-of-the-day-thumbnail-1170123120130.jpeg" alt="news article" style = "width: 300px; height: 168px;">
         <img src="gaming-news-1.jpg" alt="news article 2" style = "width: 300px; height: 168px;">
-
-
     </div>
 
     <footer>
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <img src="facebook.png" style="height: 30px; width: 40px;">
+        <a href="https://www.facebook.com/" target="_blank">Facebook </a>
+        <img src="twitter.png" style="height: 30px; width: 40px;">
         <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <img src="instagram.png" style="height: 30px; width: 40px;">
         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
 
     </footer>
